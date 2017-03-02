@@ -1,9 +1,25 @@
+var host = 'https://maps.omniscale.net/v2/{id}/style.grayscale/{z}/{x}/{y}.png';
+var attribution = '&copy; 2016 &middot; <a href="https://maps.omniscale.com/">Omniscale</a> ' +
+            '&middot; Map data: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+
 var map = L.map('mapid').setView([34.070, -118.243], 11);
+          L.tileLayer(host, {
+            id: 'private-nino-migineishvili-d1b94a07',
+            attribution: attribution
+          }).addTo(map);
+
+        map.attributionControl.setPrefix(false);
+
+/* L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map); */
+
+/* var map = L.map('mapid').setView([34.070, -118.243], 11);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-
+*/ 
 
 var koreatown = L.marker([34.061, -118.302]).addTo(map)
     .bindPopup('Koreatown/ Mid-city Apartments');
