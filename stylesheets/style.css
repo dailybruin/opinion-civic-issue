@@ -6,9 +6,9 @@
     left:0;
     z-index:0;
 }
-#main{
-    padding-left:20px;
-    padding-right:20px;
+.container{
+    padding-left:6vw;
+    padding-right:6vw;
     position:absolute;
     top:50%;
     z-index:1;
@@ -59,6 +59,22 @@ body>.highlight{
 }
 .highlight{
     top:-20px;
+}
+}
+
+@media (max-width: 400px) {
+.title{
+    font-size:3em;
+}
+#subtitle.title{
+    font-size:25px;
+    margin-bottom:-5px;
+}
+.highlight{
+    top:-20px;
+}
+p{
+    font-size:20px;
 }
 }
 
