@@ -12,7 +12,7 @@
 	}
 
 	for(var i=1;i<=6;i++){
-	    if(i == 6 || $('#'+(i+1)).offset()['top'] > $(window).scrollTop()){
+	    if(i == 6 || $('#'+(i+1)).offset()['top']-1 >= $(window).scrollTop()){
 		$('ul.timeline li:nth-child('+i+') .leftlabel').css('background-color','#ffe301');
 		break;
 	    }
