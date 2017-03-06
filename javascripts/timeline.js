@@ -1,4 +1,4 @@
-(function($) {
+var timelineScroll = function() {
     var element = $('div.timeline');
     var originalY = element.offset().top;
     // Space between element and top of screen (when scrolling)
@@ -7,6 +7,12 @@
     element.css('position', 'relative');
 
     $(window).on('scroll', function(event) {
+	if($(this).scrollTop() > $('.container').offset()['top']){
+	    $('#mapid').css('visibility','hidden');
+	}
+	else{
+	    $('#mapid').css('visibility','visible');
+	}  
 	for(var i=1;i<=6;i++){
 	    $('ul.timeline li:nth-child('+i+') .leftlabel').css('background-color','#FFFFFF');
 	}
@@ -25,4 +31,7 @@
                     : scrollTop - originalY + topMargin
         }, 500);
     });
-})(jQuery);
+}
+
+timelineScroll();
+$(window).resize(timelineScroll)
