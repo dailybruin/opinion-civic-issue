@@ -86,7 +86,7 @@ body>.highlight{
 
 .timeline {
   list-style: none;
-  padding: 0px 0 0px;
+  padding: 0px 0 33px;
   position: relative;
 }
 .timeline:before {
@@ -130,7 +130,7 @@ hr.endpoint{
     position:absolute;
     top:10px;
     font-family: 'Raleway', sans-serif;
-    font-size:1em;
+    font-size:0.9em;
     word-break:break-words;
     white-space:normal;
 }
@@ -146,5 +146,5 @@ hr.endpoint{
 }
 
 .timeline>li{
-    margin-bottom:200px;  
+    margin-bottom:120px;  
 }
