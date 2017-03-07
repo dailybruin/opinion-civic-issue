@@ -158,9 +158,9 @@ hr.endpoint{
 
 .rightlabel{
     left:5vw;
-    width:10vw;
+    width:10em;
 }
 
 .timeline>li{
-    margin-bottom:120px;  
+    margin-bottom:150px;  
 }
