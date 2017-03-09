@@ -164,3 +164,7 @@ hr.endpoint{
 .timeline>li{
     margin-bottom:150px;  
 }
+
+img.intext-photo {
+    max-width: 100%;
+}
