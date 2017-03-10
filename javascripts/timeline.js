@@ -19,7 +19,7 @@ var years = ['1781','1850','1881_1','1881_2','1896','1910',/*'1911',
 	    $('#mapid').css('visibility','visible');
 	}
 	for(var i=1;i<=years.length+1;i++){
-	    $('ul.timeline li:nth-child('+i+') .leftlabel').css('background-color','#FFFFFF');
+	    $('ul.timeline li:nth-child('+i+') .leftlabel').css('background-color','#f2f2f2');
 	}
 	var eventOffset = 0;
 	for(var i=1;i<=years.length;i++){
