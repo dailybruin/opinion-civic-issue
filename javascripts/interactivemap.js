@@ -26,10 +26,10 @@ var westwood = L.marker([34.063, -118.445]).addTo(map)
     .bindPopup('<div class="pin"><div class="pin-img"><img src="images/westwood.png"/></div><div class="pin-text">Aaron Julian: Paul Koretz\'s leadership needs to be more dynamic in final term</div></div>');
 
 var southCentral = L.marker([34.010, -118.251]).addTo(map)
-    .bindPopup('Pravin Visakan: City mayor\'s push for after-school programs could vitalize LAUSD');
+    .bindPopup('<div class="pin"><div class="pin-img"><img src="images/southcentral.png"/></div><div class="pin-text">Pravin Visakan: City mayor\'s push for after-school programs could vitalize LAUSD</div></div>');
 
 var santaMonica = L.marker([34.019, -118.491]).addTo(map)
-    .bindPopup('Keshav Tadimeti: Silicon Beach must complement Silicon Valley, not replace it');
+    .bindPopup('<div class="pin"><div class="pin-img"><img src="images/santamonica.png"/></div><div class="pin-text">Keshav Tadimeti: Silicon Beach must complement Silicon Valley, not replace it</div></div>');
 
 var sanFernando = L.marker([34.1826, -118.4397]).addTo(map)
     .bindPopup('Jasmine Aquino: City leaders must pursue sexual education reform');
