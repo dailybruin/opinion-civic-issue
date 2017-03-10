@@ -32,7 +32,7 @@ var santaMonica = L.marker([34.019, -118.491]).addTo(map)
     .bindPopup('<div class="pin"><div class="pin-img"><img src="images/santamonica.png"/></div><div class="pin-text">Keshav Tadimeti: Silicon Beach must complement Silicon Valley, not replace it</div></div>');
 
 var sanFernando = L.marker([34.1826, -118.4397]).addTo(map)
-    .bindPopup('Jasmine Aquino: City leaders must pursue sexual education reform');
+    .bindPopup('<div class="pin"><div class="pin-img"><img src="images/sanfernando.png"/></div><div class="pin-text">Jasmine Aquino: City leaders must pursue sexual education reform</div></div>');
 
 function onMarkerHover(e){
 	this.openPopup();
