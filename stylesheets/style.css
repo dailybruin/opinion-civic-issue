@@ -195,3 +195,10 @@ img.intext-photo {
     color: black;
     font-weight: bold;
 }
+
+.author {
+    color: #808080;
+    text-align: right;
+    margin-top: -20px;
+    font-style: italic;
+}

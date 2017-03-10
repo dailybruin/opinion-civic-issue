@@ -29,7 +29,7 @@ var southCentral = L.marker([34.010, -118.251]).addTo(map)
     .bindPopup('Pravin Visakan: City mayor\'s push for after-school programs could vitalize LAUSD');
 
 var santaMonica = L.marker([34.019, -118.491]).addTo(map)
-    .bindPopup('Text: Keshav Tadimeti: Silicon Beach must complement Silicon Valley, not replace it');
+    .bindPopup('Keshav Tadimeti: Silicon Beach must complement Silicon Valley, not replace it');
 
 var sanFernando = L.marker([34.1826, -118.4397]).addTo(map)
     .bindPopup('Jasmine Aquino: City leaders must pursue sexual education reform');
