@@ -13,12 +13,12 @@
     top:50%;
     z-index:1;
     /*background-color:#fcfcfc;*/
-    background-color: #DCDCDC;
+    background-color: #f2f2f2;
     width:100%;
 }
 
 .label {
-    background-color: #DCDCDC !important;
+    background-color: #f2f2f2 !important;
 }
 
 .title{
