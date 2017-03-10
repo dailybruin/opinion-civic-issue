@@ -16,6 +16,11 @@
     background-color: #DCDCDC;
     width:100%;
 }
+
+.label {
+    background-color: #DCDCDC !important;
+}
+
 .title{
     margin-left:12px;
     padding-top:3vh;
