@@ -45,7 +45,7 @@ dtla.on('mouseover', onMarkerHover);
 westwood.on('mouseover', onMarkerHover);
 southCentral.on('mouseover', onMarkerHover);
 santaMonica.on('mouseover', onMarkerHover);
-cityHall.on('mouseover', onMarkerHover);
+sanFernando.on('mouseover', onMarkerHover);
 
 
 hollywood.on('click', function click(e){
