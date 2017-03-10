@@ -18,15 +18,18 @@ var years = ['1781','1850','1881_1','1881_2','1896','1910',/*'1911',
 	else{
 	    $('#mapid').css('visibility','visible');
 	}
-	for(var i=1;i<years.length;i++){
+	for(var i=1;i<=years.length+1;i++){
 	    $('ul.timeline li:nth-child('+i+') .leftlabel').css('background-color','#FFFFFF');
 	}
 	var eventOffset = 0;
-	for(var i=1;i<years.length;i++){
-	    if(i == years.length-1 || $('#'+years[i]).offset()['top']-3 >= $(window).scrollTop()){
-		      $('ul.timeline li:nth-child('+i+') .leftlabel').css('background-color','#ffe301');
-		        if(i > 3)
-		          eventOffset = $('ul.timeline li:nth-child('+i+')').position()['top']-$(window).height()/2;
+	for(var i=1;i<=years.length;i++){
+	    if(i == years.length || $('#'+years[i]).offset()['top']-3 >= $(window).scrollTop()){
+		      $('ul.timeline li:nth-child('+(i+1)+') .leftlabel').css('background-color','#ffe301');
+            if(i>years.length){
+              eventOffset=$('ul.timeline li:nth-child('+(i+1)+')').position()['top']-$(window).height()/1.5;
+            }
+		        else if(i > 3)
+		          eventOffset = $('ul.timeline li:nth-child('+(i+1)+')').position()['top']-$(window).height()/2;
 		      break;
 	    }
 	}
