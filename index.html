@@ -1,272 +1,384 @@
 <html>
-	<head>
-	  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
-	  <!--map API-->
-	  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-	  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-	  <!--jQuery-->
-	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	  <!--smooth scrolling-->
-	  <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
-	  <!--fonts-->
-	  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
-	  <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-	  <!--stylesheets-->
-	  <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-	  <link href="stylesheets/style.css" rel="stylesheet">
-	  <title>Daily Bruin | LA Map</title>
-	</head>
 
-	<body>
-	  <!--<div class="highlight"></div>-->
-	  <div id="mapid">
-	  </div>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 
-	    <div class="container">
-	      <div class="row hidden-sm hidden-xs">
-		<div class="title">
-		  Colossus
-		  <div class="highlight"></div>
+
+	<meta property="og:url" content="http://graphics.dailybruin.com/civic-identity" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Daily Bruin | Civic Identity" />
+	<meta property="og:description" content="Placeholder description text." />
+	<meta property="og:image" content="http://dailybruin.com/img/db_logo.svg" />
+	<meta property="og:image:width" content="1920" />
+	<meta property="og:image:height" content="1080" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:image:type" content="image/jpg" />
+
+	<!--map API-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<!--jQuery-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<!--smooth scrolling-->
+	<script type="text/javascript" src="javascripts/smoothscroll.js"></script>
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<!--stylesheets-->
+	<link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="stylesheets/style.css" rel="stylesheet">
+	<title>Daily Bruin | Civic Identity</title>
+</head>
+
+<body>
+	<!--<div class="highlight"></div>-->
+	<div id="mapid">
+	</div>
+
+	<div class="container">
+		<div class="row hidden-sm hidden-xs">
+			<div class="title">
+				Colossus
+				<div class="highlight"></div>
+			</div>
+			<div id="subtitle" class="title">
+				Civic identity and the Angeleno dream
+			</div>
 		</div>
-		<div id="subtitle" class="title">
-		  Civic identity and the Angeleno dream
-		</div>
-	      </div>
 
-	      <div class="row visible-sm visible-xs">
-		<div class="title">
-		  Colossus
-		  <div class="highlight"></div>
-		</div>
-		
-		<div id="subtitle" class="title">
-		  Civic identity and the Angeleno dream
-		</div>
-	      </div>
-
-	<h3 class="col-lg-8 col-md-12 col-sm-12 col-xs-12 author"><a target="_blank" href="http://dailybruin.com/author/chris-campbell/">by Chris Campbell</a></h3>
-	<div class="row">
-		<div class="content col-lg-8 col-md-12 col-sm-12 col-xs-12">
-			<h2><b>Introduction</b></h2>
-			<p>Imagine stepping into a time machine and traveling 100 years into the future. You find out that the city of Fargo, North Dakota, once barely a speck on the map, has become the country's second largest metropolis and the place to be for cosmopolitans and immigrants of every stripe &ndash; an internationally renowned commercial and cultural hub.</p>
-			<p>That's exactly what Los Angeles is today. Over a century, the city has risen meteorically from a sleepy farming town in the middle of nowhere to a world-famous center of entertainment, business and pretty much anything else you can name. As of 2015, the Greater Los Angeles area was <a href="http://www.demographia.com/db-worldua.pdf">home to over 15 million</a> people,making it the second largest urban area in the country and 19th largest in the world. Los Angeles' GDP is closing in on $1 trillion, placing it in the top tier of urban economies globally.</p>
-			<p>But for all its people and businesses, the city faces equally legendary problems: Its housing shortages, traffic jams, homelessness, inequality and issues of racial injustice have all become as well known as any movie studio in this city. And with it, the city is going through a bit of an identity crisis.</p>
-			<p>Make no mistake, Los Angeles' era as a boomtown is over. The city &ndash; built on natural assets and sustained by the offer of a unique lifestyle centered around the automobile &ndash; now needs to reinvent itself as a true urban center if it wants to remain important in the coming years.</p>
-			<p>City leaders are emphasizing density, transit and social justice more than ever. But in order to find a way forward, the city must establish its civic identity once and for all &ndash; in other words, what it means to be an Angeleno in the 21st century.</p>
-
-			<h2><b>The Western frontier</b></h2>
-			<p>Americans didn't really pay attention to Los Angeles for most of its early history.</p>
-			<p id="1781">When Felipe De Neve &ndash; then-governor of the Spanish province of Alta California and namesake of our beloved dorms and dining hall &ndash; commissioned the establishment of El Pueblo de Nuestra Se&#241;ora de los Angeles de Porciuncula in the Los Angeles Basin in 1777, the site was a chaparral-covered prairie  home to dozens of native Tongva tribes.</p>
-			<p id="1850">100 years later, the pueblo had become a ranching community of about 6,000 people built on the backs of native laborers. Spanish and Mexican rule, the California Gold Rush and the cattle rancheros had come and gone, but Los Angeles was still just a Wild West town &ndash; rowdy and lawless, with most of the violence squared on its Mexican population.</p>
-			<div class="col-lg-6 col-md-6 col-sm-6 related">
-				<div class="pull-left">
-					<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
-					<img class="" src="images/zou.png"/>
-					<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/william-zou-the-solution-to-crime-lies-in-communication-not-incarceration/">William Zou: Communication, not incarceration key to reducing crime</a></h4>
-				</div>
+		<div class="row visible-sm visible-xs">
+			<div class="title">
+				Colossus
+				<div class="highlight"></div>
 			</div>
 
-			<p id="1881_1">All that quickly changed when the railroads came to town. In the process, Los Angeles found a civic identity as a booming farm town on the western frontier supported by good weather, cheap land and wealth eventually provided by the oil and movie industries.</p>
-			<p>When the Southern Pacific Railroad was completed in 1881, it provided Southern California's first direct link to the eastern United States. That same year, the California State Normal School opened a southern branch &ndash; one that would eventually become UCLA. Los Angeles was clearly moving up in the world.</p>
-			<p>Local farmers soon found that the area's temperate Mediterranean climate was perfect for growing big, juicy oranges. With the advent of refrigerated boxcars, agriculture replaced cattle ranching as a mainstay of the Southern California economy. The orange industry left an impression on the growing town that can still be felt to this day.</p>
-			<p>By 1890, over 50,000 people called Los Angeles home.</p>
-			<p id="1881_2">It's tough to pin down a single explanation for the city's sudden explosive growth. In a <a href="https://www.jstor.org/stable/41167822?seq=1#page_scan_tab_contents">1890 edition</a> of the "Historical Society of Southern California," historian J.M. Guinn laid out three reasons for the city's stunning success. First, railroads from the U.S.'s eastern population centers eliminated the six-month transcontinental trek to even reach the place. Second was the orange business, which attracted thousands of migrants looking for work. Third, the area's world-famous sunny and warm climate proved an obvious draw for frostbitten easterners.</p>
-			<p>There were other factors too: easily available land through the Homestead Act of 1862 promised newcomers a healthy chunk of Southern California real estate, and the <a href="http://aoghs.org/states/los-angeles-oil-fields/">discovery of oil</a> in 1892 attracted speculators &ndash; and their money &ndash; in droves.</p>
-
-			<!-- {{1929 newspaper ad photo}}  -->
-
-			<p>Looking back, it's easy to see similar factors and growth patterns in other Sunbelt cities like Houston, San Diego and later Phoenix. But Los Angeles was the only city with a potent-enough combination of cheap and open land, a strong economy and good weather in the prime time of Western settlement to sustain a population boom that lasted decades.</p>
-			<p id="1896">If Los Angeles' early growth was fueled by its natural assets, it was quickly becoming a major city in its own right &ndash; complete with electric trolleys, the newly-opened University of Southern California and a <a href="http://graphics.latimes.com/me-aqueduct/">280-mile aqueduct</a> carrying water from the Owens River in the Sierra Nevada area to the southland. The city even had its first skyscraper, the Braly Block, open in 1904.</p>
-			<div class="col-lg-6 col-md-6 col-sm-6 related">
-				<div class="pull-left">
-					<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
-					<img class="" src="images/tadimeti.jpg"/>
-					<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/keshav-tadimeti-las-silicon-beach-must-complement-silicon-valley-not-replace-it/">Keshav Tadimeti: Silicon Beach must complement Silicon Valley, not replace it</a></h4>
-				</div>
+			<div id="subtitle" class="title">
+				Civic identity and the Angeleno dream
 			</div>
-			<p id="1910">The population would continue to boom over the next 20 years as the petroleum and silent film industry attracted more residents and business to the Southland.</p>
-			<p id="1915">But this was just LA's warm up. A particular invention that was becoming popular at the time would cement the city's place as the boomtown of the 20th century: the automobile.</p>
-			<p id="1919">Eventually, the orange groves would give way to palm trees and housing subdivisions as Los Angeles discovered its next identity.</p>
+		</div>
 
-			<h2><b>Paradise on the freeway</b></h2>
-			<p>Fun fact: only one species of palm tree is actually native to Southern California. Of the countless different types of palms throughout LA, every one that isn't the tall <i>Washingtonia filifera</i> &ndash; better known as the California fan palm &ndash; came from elsewhere.</p>
-			<p>Yet palms of every shape and size have come to define the city's urban landscape, and they provide an important clue to discerning why Los Angeles continued to grow and thrive while other cities across the country lost population and relevance.</p>
-			<p>Los Angeles' second identity was, simply put, a 20th century paradise. It promised its citizens what its eastern counterparts could not: a mild climate, affordable housing and &ndash; most importantly &ndash; an entire city built around the allure of a freewheeling auto-centered lifestyle.</p>
-			<div class="col-lg-7 col-md-7 col-sm-7 related">
-				<div class="pull-left">
-					<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
-					<img class="" src="images/busco.jpg"/>
-					<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/chris-busco-city-infrastructure-could-turn-los-angeles-into-a-pedestrian-paradise/">Chris Busco: City infrastructure could turn Los Angeles into a pedestrian paradise</a></h4>
+		<h3 class="col-lg-8 col-md-12 col-sm-12 col-xs-12 author"><a target="_blank" href="http://dailybruin.com/author/chris-campbell/">by Chris Campbell</a></h3>
+		<div class="row">
+			<div class="content col-lg-8 col-md-12 col-sm-12 col-xs-12">
+				<h2><b>Introduction</b></h2>
+				<p>Imagine stepping into a time machine and traveling 100 years into the future. You find out that the city of Fargo, North
+					Dakota, once barely a speck on the map, has become the country's second largest metropolis and the place to be for cosmopolitans
+					and immigrants of every stripe &ndash; an internationally renowned commercial and cultural hub.</p>
+				<p>That's exactly what Los Angeles is today. Over a century, the city has risen meteorically from a sleepy farming town
+					in the middle of nowhere to a world-famous center of entertainment, business and pretty much anything else you can name.
+					As of 2015, the Greater Los Angeles area was <a href="http://www.demographia.com/db-worldua.pdf">home to over 15 million</a>					people,making it the second largest urban area in the country and 19th largest in the world. Los Angeles' GDP is closing
+					in on $1 trillion, placing it in the top tier of urban economies globally.</p>
+				<p>But for all its people and businesses, the city faces equally legendary problems: Its housing shortages, traffic jams,
+					homelessness, inequality and issues of racial injustice have all become as well known as any movie studio in this city.
+					And with it, the city is going through a bit of an identity crisis.</p>
+				<p>Make no mistake, Los Angeles' era as a boomtown is over. The city &ndash; built on natural assets and sustained by the
+					offer of a unique lifestyle centered around the automobile &ndash; now needs to reinvent itself as a true urban center
+					if it wants to remain important in the coming years.</p>
+				<p>City leaders are emphasizing density, transit and social justice more than ever. But in order to find a way forward,
+					the city must establish its civic identity once and for all &ndash; in other words, what it means to be an Angeleno
+					in the 21st century.</p>
+
+				<h2><b>The Western frontier</b></h2>
+				<p>Americans didn't really pay attention to Los Angeles for most of its early history.</p>
+				<p id="1781">When Felipe De Neve &ndash; then-governor of the Spanish province of Alta California and namesake of our beloved dorms
+					and dining hall &ndash; commissioned the establishment of El Pueblo de Nuestra Se&#241;ora de los Angeles de Porciuncula
+					in the Los Angeles Basin in 1777, the site was a chaparral-covered prairie home to dozens of native Tongva tribes.</p>
+				<p id="1850">100 years later, the pueblo had become a ranching community of about 6,000 people built on the backs of native laborers.
+					Spanish and Mexican rule, the California Gold Rush and the cattle rancheros had come and gone, but Los Angeles was still
+					just a Wild West town &ndash; rowdy and lawless, with most of the violence squared on its Mexican population.</p>
+				<div class="col-lg-6 col-md-6 col-sm-6 related">
+					<div class="pull-left">
+						<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
+						<img class="" src="images/zou.png" />
+						<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/william-zou-the-solution-to-crime-lies-in-communication-not-incarceration/">William Zou: Communication, not incarceration key to reducing crime</a></h4>
+					</div>
 				</div>
-			</div>
-			<p>And it delivered &ndash; at least for a while.</p>
-			<p>
-				<span id="1924">The city had plenty of room to grow into this model from its perch in 1920: its population of almost 600,000 was largely confined to the city center and got around with one of the most extensive streetcar systems in the country.</span>
-				<span id="1928">City Hall opened in 1928 as a towering celebration of the city's newfound prominence. The 408-foot structure would remain the tallest building in the city for 40 years.</span>
-				<span id="1929">Most of the surrounding land was still farmland or wilderness &ndash; including a pocket of land out west where a new UCLA campus opened in 1929. Los Angeles also began aggressively annexing surrounding communities.</span>
-			</p>
-			<p id="1932">By 1930, the population of Los Angeles had ballooned to over a million people, cementing its place as one of America's great cities. No one was ignoring LA anymore.</p>
-			<p id="1940">The population only continued to grow during the Great Depression and World War II, when the southland set itself up as the West Coast's economic center and primary magnet for wartime manufacturing.</p>
-			<p id="1944">All those people had to live somewhere, so housing tracts began to spread in all directions from the city center, aided by a growing street grid and an intricate Red Car streetcar system &ndash; the <a href="http://www.american-rails.com/pacific-electric-railway.html">largest in the world</a> at its peak.</p>
 
-			<!-- {{freeway overlay graphic}} -->
-			<!--<div class="col-lg-7 col-md-7 col-sm-7">
+				<p id="1881_1">All that quickly changed when the railroads came to town. In the process, Los Angeles found a civic identity as a booming
+					farm town on the western frontier supported by good weather, cheap land and wealth eventually provided by the oil and
+					movie industries.</p>
+				<p>When the Southern Pacific Railroad was completed in 1881, it provided Southern California's first direct link to the
+					eastern United States. That same year, the California State Normal School opened a southern branch &ndash; one that
+					would eventually become UCLA. Los Angeles was clearly moving up in the world.</p>
+				<p>Local farmers soon found that the area's temperate Mediterranean climate was perfect for growing big, juicy oranges.
+					With the advent of refrigerated boxcars, agriculture replaced cattle ranching as a mainstay of the Southern California
+					economy. The orange industry left an impression on the growing town that can still be felt to this day.</p>
+				<p>By 1890, over 50,000 people called Los Angeles home.</p>
+				<p id="1881_2">It's tough to pin down a single explanation for the city's sudden explosive growth. In a <a href="https://www.jstor.org/stable/41167822?seq=1#page_scan_tab_contents">1890 edition</a>					of the "Historical Society of Southern California," historian J.M. Guinn laid out three reasons for the city's stunning
+					success. First, railroads from the U.S.'s eastern population centers eliminated the six-month transcontinental trek
+					to even reach the place. Second was the orange business, which attracted thousands of migrants looking for work. Third,
+					the area's world-famous sunny and warm climate proved an obvious draw for frostbitten easterners.</p>
+				<p>There were other factors too: easily available land through the Homestead Act of 1862 promised newcomers a healthy chunk
+					of Southern California real estate, and the <a href="http://aoghs.org/states/los-angeles-oil-fields/">discovery of oil</a>					in 1892 attracted speculators &ndash; and their money &ndash; in droves.</p>
+
+				<!-- {{1929 newspaper ad photo}}  -->
+
+				<p>Looking back, it's easy to see similar factors and growth patterns in other Sunbelt cities like Houston, San Diego and
+					later Phoenix. But Los Angeles was the only city with a potent-enough combination of cheap and open land, a strong economy
+					and good weather in the prime time of Western settlement to sustain a population boom that lasted decades.</p>
+				<p id="1896">If Los Angeles' early growth was fueled by its natural assets, it was quickly becoming a major city in its own right
+					&ndash; complete with electric trolleys, the newly-opened University of Southern California and a <a href="http://graphics.latimes.com/me-aqueduct/">280-mile aqueduct</a>					carrying water from the Owens River in the Sierra Nevada area to the southland. The city even had its first skyscraper,
+					the Braly Block, open in 1904.</p>
+				<div class="col-lg-6 col-md-6 col-sm-6 related">
+					<div class="pull-left">
+						<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
+						<img class="" src="images/tadimeti.jpg" />
+						<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/keshav-tadimeti-las-silicon-beach-must-complement-silicon-valley-not-replace-it/">Keshav Tadimeti: Silicon Beach must complement Silicon Valley, not replace it</a></h4>
+					</div>
+				</div>
+				<p id="1910">The population would continue to boom over the next 20 years as the petroleum and silent film industry attracted more
+					residents and business to the Southland.</p>
+				<p id="1915">But this was just LA's warm up. A particular invention that was becoming popular at the time would cement the city's
+					place as the boomtown of the 20th century: the automobile.</p>
+				<p id="1919">Eventually, the orange groves would give way to palm trees and housing subdivisions as Los Angeles discovered its next
+					identity.</p>
+
+				<h2><b>Paradise on the freeway</b></h2>
+				<p>Fun fact: only one species of palm tree is actually native to Southern California. Of the countless different types of
+					palms throughout LA, every one that isn't the tall <i>Washingtonia filifera</i> &ndash; better known as the California
+					fan palm &ndash; came from elsewhere.</p>
+				<p>Yet palms of every shape and size have come to define the city's urban landscape, and they provide an important clue
+					to discerning why Los Angeles continued to grow and thrive while other cities across the country lost population and
+					relevance.</p>
+				<p>Los Angeles' second identity was, simply put, a 20th century paradise. It promised its citizens what its eastern counterparts
+					could not: a mild climate, affordable housing and &ndash; most importantly &ndash; an entire city built around the allure
+					of a freewheeling auto-centered lifestyle.</p>
+				<div class="col-lg-7 col-md-7 col-sm-7 related">
+					<div class="pull-left">
+						<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
+						<img class="" src="images/busco.jpg" />
+						<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/chris-busco-city-infrastructure-could-turn-los-angeles-into-a-pedestrian-paradise/">Chris Busco: City infrastructure could turn Los Angeles into a pedestrian paradise</a></h4>
+					</div>
+				</div>
+				<p>And it delivered &ndash; at least for a while.</p>
+				<p>
+					<span id="1924">The city had plenty of room to grow into this model from its perch in 1920: its population of almost 600,000 was largely confined to the city center and got around with one of the most extensive streetcar systems in the country.</span>
+					<span id="1928">City Hall opened in 1928 as a towering celebration of the city's newfound prominence. The 408-foot structure would remain the tallest building in the city for 40 years.</span>
+					<span id="1929">Most of the surrounding land was still farmland or wilderness &ndash; including a pocket of land out west where a new UCLA campus opened in 1929. Los Angeles also began aggressively annexing surrounding communities.</span>
+				</p>
+				<p id="1932">By 1930, the population of Los Angeles had ballooned to over a million people, cementing its place as one of America's
+					great cities. No one was ignoring LA anymore.</p>
+				<p id="1940">The population only continued to grow during the Great Depression and World War II, when the southland set itself up
+					as the West Coast's economic center and primary magnet for wartime manufacturing.</p>
+				<p id="1944">All those people had to live somewhere, so housing tracts began to spread in all directions from the city center, aided
+					by a growing street grid and an intricate Red Car streetcar system &ndash; the <a href="http://www.american-rails.com/pacific-electric-railway.html">largest in the world</a>					at its peak.</p>
+
+				<!-- {{freeway overlay graphic}} -->
+				<!--<div class="col-lg-7 col-md-7 col-sm-7">
 				<div class="pull-left"><img class="intext-photo" src="images/freewayoverlay.png"/></div>
 			</div>-->
 
-			<img class="intext-photo" src="images/freewayoverlay.png"/>
-			<p>And traffic isn't just a modern LA gripe: riders often complained of slow streetcar speeds along its busiest lines, prompting civic leaders to look into an alternative route of transportation. They found it in the freeway. When the national freeway frenzy began in earnest during the 1950s, the megaroads were considered saviors that would be cheaper, faster and more versatile than the streetcars. The Red Car system began dismantling at the same time.</p>
-			<p>
-				<span id="1946">By the 1950s, LA's trajectory was clear. The city was still growing at a breakneck pace in every direction.</span>
-				<span id="1957">Every direction, that is, except up. The city passed an <a href="http://articles.latimes.com/1985-07-08/local/me-9715_1_building-height">ordinance</a> way back in 1911 restricting the height of any new building to 150 feet, with the sole exception of City Hall.</span>
-			</p>
-			<p>But that played perfectly into LA's allure. People &ndash; wealthy white people, to be specific &ndash; were fleeing America's crowded, polluted and oftentimes snowy inner cities en masse for suburbs in the phenomenon known as "white flight". And LA marketed itself as one giant suburb.</p>
-			<div class="col-lg-6 col-md-6 col-sm-6 related">
-				<div class="pull-left">
-					<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
-					<img class="" src="images/visakan.png"/>
-					<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/pravin-visakan-city-mayors-push-for-after-school-programs-could-revitalize-lausd/">Pravin Visakan: Mayor should push for after-school programs could vitalize LAUSD</a></h4>
+				<img class="intext-photo" src="images/freewayoverlay.png" />
+				<p>And traffic isn't just a modern LA gripe: riders often complained of slow streetcar speeds along its busiest lines, prompting
+					civic leaders to look into an alternative route of transportation. They found it in the freeway. When the national freeway
+					frenzy began in earnest during the 1950s, the megaroads were considered saviors that would be cheaper, faster and more
+					versatile than the streetcars. The Red Car system began dismantling at the same time.</p>
+				<p>
+					<span id="1946">By the 1950s, LA's trajectory was clear. The city was still growing at a breakneck pace in every direction.</span>
+					<span id="1957">Every direction, that is, except up. The city passed an <a href="http://articles.latimes.com/1985-07-08/local/me-9715_1_building-height">ordinance</a> way back in 1911 restricting the height of any new building to 150 feet, with the sole exception of City Hall.</span>
+				</p>
+				<p>But that played perfectly into LA's allure. People &ndash; wealthy white people, to be specific &ndash; were fleeing
+					America's crowded, polluted and oftentimes snowy inner cities en masse for suburbs in the phenomenon known as "white
+					flight". And LA marketed itself as one giant suburb.</p>
+				<div class="col-lg-6 col-md-6 col-sm-6 related">
+					<div class="pull-left">
+						<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
+						<img class="" src="images/visakan.png" />
+						<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/pravin-visakan-city-mayors-push-for-after-school-programs-could-revitalize-lausd/">Pravin Visakan: Mayor should push for after-school programs could vitalize LAUSD</a></h4>
+					</div>
 				</div>
-			</div>
-			<p>Even the buildings were built around the car. The line of skyscrapers down Wilshire Boulevard's “Miracle Mile” were envisioned as the nation's first “linear downtown,” where every building was easily accessible just by driving down the street.</p>
-			<p>A large, single-family home on a generous lot, with a lawn artificially irrigated by water from the Colorado and Owens Rivers &ndash; the American dream offered itself in full gear. And lest residents ever felt that they weren't living in paradise, the palm trees were always there to emphasize the tropical vibe.</p>
-			<p>Los Angeles and the California lifestyle made its mark on the national psyche through pop culture: James Dean raced cars in "Rebel Without a Cause" and The Mamas and The Papas had some "California Dreamin'", singing “I'd be safe and warm, if I was in LA.”</p>
-			<div class="col-lg-6 col-md-6 col-sm-6 related">
-				<div class="pull-left">
-					<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
-					<img class="" src="images/aquino.png"/>
-					<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/jasmine-aquino-city-leaders-must-pursue-sexual-education-reform/">Jasmine Aquino: City leaders must pursue sexual education reform</a></h4>
+				<p>Even the buildings were built around the car. The line of skyscrapers down Wilshire Boulevard's “Miracle Mile” were envisioned
+					as the nation's first “linear downtown,” where every building was easily accessible just by driving down the street.</p>
+				<p>A large, single-family home on a generous lot, with a lawn artificially irrigated by water from the Colorado and Owens
+					Rivers &ndash; the American dream offered itself in full gear. And lest residents ever felt that they weren't living
+					in paradise, the palm trees were always there to emphasize the tropical vibe.</p>
+				<p>Los Angeles and the California lifestyle made its mark on the national psyche through pop culture: James Dean raced cars
+					in "Rebel Without a Cause" and The Mamas and The Papas had some "California Dreamin'", singing “I'd be safe and warm,
+					if I was in LA.”</p>
+				<div class="col-lg-6 col-md-6 col-sm-6 related">
+					<div class="pull-left">
+						<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
+						<img class="" src="images/aquino.png" />
+						<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/jasmine-aquino-city-leaders-must-pursue-sexual-education-reform/">Jasmine Aquino: City leaders must pursue sexual education reform</a></h4>
+					</div>
 				</div>
-			</div>
-			<p id="1965_1">Which was all well and good &ndash; if you were white. But discriminatory housing covenants meant that the Angeleno take on the American dream was virtually off-limits to the city's sizeable Hispanic and black populations. The covenants were banned by the Rumford Fair Housing Act of 1963 but reinstated when California voters approved Proposition 14, which nullified the Rumford Act, in 1964. The California Supreme Court declared the proposition unconstitutional in 1966, but racial minorities were still forced into the eastern and southern parts of the city. These neighborhoods suffered from decades of divestment and neglect, which can still be felt to this day.</p>
-			<p id="1973">Los Angeles continued to grow throughout the postwar era &ndash; in sharp contrast to its already-developed counterparts in the East and Midwest, which saw their populations decimated in a one-two punch from economic malaise caused by deindustrialization and suburbanization at the expense of the inner city. Notably, of the U.S.'s 10 largest cities in 1950, only New York and Los Angeles have a larger population today.</p>
-			<p>But all this growth lead to a whole host of new problems, forcing the city to question its comfortable suburban identity and once again transform &ndash; this time into the densifying urban colossus we see today.</p>
+				<p id="1965_1">Which was all well and good &ndash; if you were white. But discriminatory housing covenants meant that the Angeleno take
+					on the American dream was virtually off-limits to the city's sizeable Hispanic and black populations. The covenants
+					were banned by the Rumford Fair Housing Act of 1963 but reinstated when California voters approved Proposition 14, which
+					nullified the Rumford Act, in 1964. The California Supreme Court declared the proposition unconstitutional in 1966,
+					but racial minorities were still forced into the eastern and southern parts of the city. These neighborhoods suffered
+					from decades of divestment and neglect, which can still be felt to this day.</p>
+				<p id="1973">Los Angeles continued to grow throughout the postwar era &ndash; in sharp contrast to its already-developed counterparts
+					in the East and Midwest, which saw their populations decimated in a one-two punch from economic malaise caused by deindustrialization
+					and suburbanization at the expense of the inner city. Notably, of the U.S.'s 10 largest cities in 1950, only New York
+					and Los Angeles have a larger population today.</p>
+				<p>But all this growth lead to a whole host of new problems, forcing the city to question its comfortable suburban identity
+					and once again transform &ndash; this time into the densifying urban colossus we see today.</p>
 
-			<h2><b>City of lights</b></h2>
-			<p id="1984_1">The year was 1984, and cheers flooded the Coliseum. Athletes from around the world gathered to show their physical prowess in the XXIII Olympiad. And Los Angeles was the center of the world's attention.</p>
-			<p id="1984_2">A mere 100 years after it was a rough-and-tumble farm town newly connected to the outside world, Los Angeles had become a behemoth megapolis that was hosting the Olympics for the second tim and had just overtaken Chicago to become the second largest city in the country. The age of modern LA was just beginning.</p>
-			<p>But as the saying goes, not everything that glitters in this city of lights is gold. The modern city is defined by dichotomy: old and new, rich and poor, low and high-rise. Many of the current issues Los Angeles faces like homelessness, traffic, pollution and housing shortages stem from its status as a boomtown metropolis for most of the 20th century.</p>
-			<!-- {{tallest buildings graphic]} -->
-			<!--<div class="col-lg-7 col-md-7 col-sm-7">
+				<h2><b>City of lights</b></h2>
+				<p id="1984_1">The year was 1984, and cheers flooded the Coliseum. Athletes from around the world gathered to show their physical prowess
+					in the XXIII Olympiad. And Los Angeles was the center of the world's attention.</p>
+				<p id="1984_2">A mere 100 years after it was a rough-and-tumble farm town newly connected to the outside world, Los Angeles had become
+					a behemoth megapolis that was hosting the Olympics for the second tim and had just overtaken Chicago to become the second
+					largest city in the country. The age of modern LA was just beginning.</p>
+				<p>But as the saying goes, not everything that glitters in this city of lights is gold. The modern city is defined by dichotomy:
+					old and new, rich and poor, low and high-rise. Many of the current issues Los Angeles faces like homelessness, traffic,
+					pollution and housing shortages stem from its status as a boomtown metropolis for most of the 20th century.</p>
+				<!-- {{tallest buildings graphic]} -->
+				<!--<div class="col-lg-7 col-md-7 col-sm-7">
 				<div class="pull-left"><img class="intext-photo" src="images/buildings.png"/></div>
 			</div>-->
-			<img class="intext-photo" src="images/buildings.png"/>
-			<p id="1990_1">In 1957, city voters repealed the ordinance restricting building heights. The Union Bank Plaza opened downtown 11 years later as LA's first modern skyscraper and part of a controversial redevelopment of the Bunker Hill neighborhood. The neighborhood's stately old Victorian homes were quickly razed and replaced by gleaming glass and steel skyscrapers.</p>
+				<img class="intext-photo" src="images/buildings.png" />
+				<p id="1990_1">In 1957, city voters repealed the ordinance restricting building heights. The Union Bank Plaza opened downtown 11 years
+					later as LA's first modern skyscraper and part of a controversial redevelopment of the Bunker Hill neighborhood. The
+					neighborhood's stately old Victorian homes were quickly razed and replaced by gleaming glass and steel skyscrapers.</p>
 
-			<p>Some people liked those Victorians, though. There has always been a tension between pro-and anti-development visions for the city, reflected in the fact that control over development has been the one of the most contentious issues in local politics as of late &ndash; the high rise-restricting Measure S on this year's ballot is just the most recent example.</p>
-			<div class="col-lg-6 col-md-6 col-sm-6 related">
-				<div class="pull-left">
-					<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
-					<img class="" src="images/kosmala.jpg"/>
-					<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/guillaume-kosmala-students-must-stand-against-proposals-like-measure-s/">Guillaume Kosmala: Students must stand against proposals like Measure S</a></h4>
+				<p>Some people liked those Victorians, though. There has always been a tension between pro-and anti-development visions
+					for the city, reflected in the fact that control over development has been the one of the most contentious issues in
+					local politics as of late &ndash; the high rise-restricting Measure S on this year's ballot is just the most recent
+					example.</p>
+				<div class="col-lg-6 col-md-6 col-sm-6 related">
+					<div class="pull-left">
+						<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
+						<img class="" src="images/kosmala.jpg" />
+						<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/guillaume-kosmala-students-must-stand-against-proposals-like-measure-s/">Guillaume Kosmala: Students must stand against proposals like Measure S</a></h4>
+					</div>
 				</div>
-			</div>
-			<p>This tension underscores yet another one of Los Angeles' civic identities. But this time, the city is torn between visions of its suburban, exclusionary past and diverse urban future, and Angelenos are living in a moment of civic rediscovery.</p>
+				<p>This tension underscores yet another one of Los Angeles' civic identities. But this time, the city is torn between visions
+					of its suburban, exclusionary past and diverse urban future, and Angelenos are living in a moment of civic rediscovery.</p>
 
-			<!-- {{photo slideshow}}  -->
+				<!-- {{photo slideshow}}  -->
 
-			<p id="1990_2">The facade of a car-based utopia was already beginning to crack by the 1970s, as it turned out that building an entire city around the automobile had some unintended consequences. Jammed freeways and an internationally notorious smog problem prompted swift and aggressive action by the city. Now, most of Los Angeles' transportation initiatives are aimed at getting people out of their cars &ndash; not into them.</p>
-			<p>Moreover, the still-rising population introduced a problem new to Angelenos: Housing was becoming too expensive. Some people couldn't even pay their property taxes anymore. In the “taxpayer revolt” of 1978, California voters passed <a href="https://www.californiataxdata.com/pdf/Prop13.pdf">Proposition 13</a>, which caps property taxes and provided respite from crushing tax burdens &ndash; at the expense of state coffers.</p>
-			<p>A bigger <a href="http://articles.latimes.com/1987-03-29/realestate/re-982_1_city-council">backlash</a> to the city's rapid development took place in 1986, when city voters passed Proposition U. The measure imposed significant reductions on the size and height of buildings in many areas of the city.</p>
-			<p id="1992">And the suburban legacy of racial injustice has continued into the 21st century. Today's majority-minority neighborhoods are still struggling with basic environmental justice issues like having enough <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3482049/">grocery stores</a> and handling <a href="http://articles.latimes.com/2007/apr/12/local/me-toxic12">toxic waste</a>. The issue has slipped under the city's radar for years, but thank to increased activism and focus on social justice, it may finally be getting the attention it deserves.</p>
-			<div class="col-lg-6 col-md-6 col-sm-6 related">
-				<div class="pull-left">
-					<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
-					<img class="" src="images/alvarez.jpg"/>
-					<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/jacqueline-alvarez-gentrification-of-la-detrimental-to-lower-income-population/">Jacqueline Alvarez: Gentrification of LA detrimental to lower-income population</a></h4>
+				<p id="1990_2">The facade of a car-based utopia was already beginning to crack by the 1970s, as it turned out that building an entire
+					city around the automobile had some unintended consequences. Jammed freeways and an internationally notorious smog problem
+					prompted swift and aggressive action by the city. Now, most of Los Angeles' transportation initiatives are aimed at
+					getting people out of their cars &ndash; not into them.</p>
+				<p>Moreover, the still-rising population introduced a problem new to Angelenos: Housing was becoming too expensive. Some
+					people couldn't even pay their property taxes anymore. In the “taxpayer revolt” of 1978, California voters passed
+					<a
+					  href="https://www.californiataxdata.com/pdf/Prop13.pdf">Proposition 13</a>, which caps property taxes and provided respite from crushing tax burdens &ndash; at the expense
+						of state coffers.</p>
+				<p>A bigger <a href="http://articles.latimes.com/1987-03-29/realestate/re-982_1_city-council">backlash</a> to the city's
+					rapid development took place in 1986, when city voters passed Proposition U. The measure imposed significant reductions
+					on the size and height of buildings in many areas of the city.</p>
+				<p id="1992">And the suburban legacy of racial injustice has continued into the 21st century. Today's majority-minority neighborhoods
+					are still struggling with basic environmental justice issues like having enough <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3482049/">grocery stores</a>					and handling <a href="http://articles.latimes.com/2007/apr/12/local/me-toxic12">toxic waste</a>. The issue has slipped
+					under the city's radar for years, but thank to increased activism and focus on social justice, it may finally be getting
+					the attention it deserves.</p>
+				<div class="col-lg-6 col-md-6 col-sm-6 related">
+					<div class="pull-left">
+						<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
+						<img class="" src="images/alvarez.jpg" />
+						<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/jacqueline-alvarez-gentrification-of-la-detrimental-to-lower-income-population/">Jacqueline Alvarez: Gentrification of LA detrimental to lower-income population</a></h4>
+					</div>
 				</div>
-			</div>
-			<p>
-				<span id="1994">It hasn't been all doom and gloom for Los Angeles, though.</span>
-				<span id="2005">The city is still growing, albeit not as quickly as before. It's made significant investments in mass transit, most recently via Measure M, a sales tax passed last November that will finance major expansions in the city's transportation infrastructure. And in the Trump era, Los Angeles' leaders have positioned themselves as advocates of social justice &ndash; how well they can carry out that promise and address the city's infamous inequality and racial tensions remains to be seen.</span>
-			</p>
-			<p>The legacies of the city's previous identities have manifested in the attractions and problems of the LA we see today. But housing tracts are a lot harder to bulldoze than orange groves, and unlike before, Los Angeles isn't going to be able to organically grow its way out of its problems.</p>
-			<p id="2013">The decisions city leaders make over the next few years can determine whether LA sinks or swims &ndash; if it becomes a thriving metropolis influenced by its suburban roots, or just another overcrowded city that can't meet its residents' needs. </p>
+				<p>
+					<span id="1994">It hasn't been all doom and gloom for Los Angeles, though.</span>
+					<span id="2005">The city is still growing, albeit not as quickly as before. It's made significant investments in mass transit, most recently via Measure M, a sales tax passed last November that will finance major expansions in the city's transportation infrastructure. And in the Trump era, Los Angeles' leaders have positioned themselves as advocates of social justice &ndash; how well they can carry out that promise and address the city's infamous inequality and racial tensions remains to be seen.</span>
+				</p>
+				<p>The legacies of the city's previous identities have manifested in the attractions and problems of the LA we see today.
+					But housing tracts are a lot harder to bulldoze than orange groves, and unlike before, Los Angeles isn't going to be
+					able to organically grow its way out of its problems.</p>
+				<p id="2013">The decisions city leaders make over the next few years can determine whether LA sinks or swims &ndash; if it becomes
+					a thriving metropolis influenced by its suburban roots, or just another overcrowded city that can't meet its residents'
+					needs. </p>
 
-			<h2><b>Changing tides</b></h2>
-			<p>Every now and then, when I get a break from my responsibilities at the Daily Bruin, I take the Expo rail line downtown. It helps me escape the Westwood bubble for a bit, and I like watching the city whiz by as the train barrels down the tracks &ndash; or crawls, at it gets closer to downtown.</p>
-			<p>From my window, there's a pretty stark difference in the layout and development between Westwood and Palms &ndash; and Crenshaw, and West Adams, and Exposition Park and Downtown, for that matter.</p>
-			<p>But there's one thing all these places, along with the countless other neighborhoods throughout the city, have in common: They're developed, yet still growing.</p>
+				<h2><b>Changing tides</b></h2>
+				<p>Every now and then, when I get a break from my responsibilities at the Daily Bruin, I take the Expo rail line downtown.
+					It helps me escape the Westwood bubble for a bit, and I like watching the city whiz by as the train barrels down the
+					tracks &ndash; or crawls, at it gets closer to downtown.</p>
+				<p>From my window, there's a pretty stark difference in the layout and development between Westwood and Palms &ndash; and
+					Crenshaw, and West Adams, and Exposition Park and Downtown, for that matter.</p>
+				<p>But there's one thing all these places, along with the countless other neighborhoods throughout the city, have in common:
+					They're developed, yet still growing.</p>
 
-			<!-- {{LA songs graphics}} -->
-			<!--<div class="col-lg-7 col-md-7 col-sm-7">
+				<!-- {{LA songs graphics}} -->
+				<!--<div class="col-lg-7 col-md-7 col-sm-7">
 				<div class="pull-left"><img class="intext-photo" src="images/LAsongs.png"/></div>
 			</div>-->
 
-			<img class="intext-photo" src="images/LAsongs.png"/>
+				<img class="intext-photo" src="images/LAsongs.png" />
 
-			<p>Los Angeles is a colossus. The chaparral-covered wilderness and orange groves are long gone, replaced by houses, apartments, skyscrapers and strip malls. The City of Angels' days as a frontier boomtown and America's suburb are over.</p>
-			<div class="col-lg-6 col-md-6 col-sm-6 related">
-				<div class="pull-left">
-					<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
-					<img class="" src="images/julian.jpg"/>
-					<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/aaron-julian-paul-koretzs-leadership-needs-to-be-more-dynamic-in-final-term/">Aaron Julian: Paul Koretz's leadership needs to be more dynamic in final term</a></h4>
+				<p>Los Angeles is a colossus. The chaparral-covered wilderness and orange groves are long gone, replaced by houses, apartments,
+					skyscrapers and strip malls. The City of Angels' days as a frontier boomtown and America's suburb are over.</p>
+				<div class="col-lg-6 col-md-6 col-sm-6 related">
+					<div class="pull-left">
+						<span class="glyphicon glyphicon-link" aria-hidden="true"></span> Related
+						<img class="" src="images/julian.jpg" />
+						<h4><a target="_blank" href="http://dailybruin.com/2017/03/09/aaron-julian-paul-koretzs-leadership-needs-to-be-more-dynamic-in-final-term/">Aaron Julian: Paul Koretz's leadership needs to be more dynamic in final term</a></h4>
+					</div>
 				</div>
+				<p>And yes, the city faces challenges of Angeleno proportions: homelessness, crime, inequality, fights over development,
+					gridlock and gentrification. Unaddressed, these issues threaten to buckle the city under the weight of its own problems.</p>
+				<p>But tackling these issues can put Los Angeles on the brink of a major urban transformation. Like it has in the past,
+					it will grow and change yet again. It must adapt to changing cultural and demographic tides to cultivate a bustling
+					but sustainable and livable environment for all its citizens.</p>
+				<p>If it's done right, the city can find a new identity as true urban center. The assets are there: an economic, entertainment
+					and cultural hub of international prestige, a wide array of lifestyle options and one of the most diverse places in
+					the world to boot.</p>
+				<p>Now, it needs to do what it hasn't before and provide the Angeleno dream to all its citizens.</p>
+				<p>It's a future the city must embrace &ndash; after all, it's already grown out. Both literally and metaphorically, the
+					only way to go now is up.</p>
 			</div>
-			<p>And yes, the city faces challenges of  Angeleno proportions: homelessness, crime, inequality, fights over development, gridlock and gentrification. Unaddressed, these issues threaten to buckle the city under the weight of its own problems.</p>
-			<p>But tackling these issues can put Los Angeles on the brink of a major urban transformation. Like it has in the past, it will grow and change yet again. It must adapt to changing cultural and demographic tides to cultivate a bustling but sustainable and livable environment for all its citizens.</p>
-			<p>If it's done right, the city can find a new identity as true urban center. The assets are there: an economic, entertainment and cultural hub of international prestige, a wide array of lifestyle options and one of the most diverse places in the world to boot.</p>
-			<p>Now, it needs to do what it hasn't before and provide the Angeleno dream to all its citizens.</p>
-			<p>It's a future the city must embrace &ndash; after all, it's already grown out. Both literally and metaphorically, the only way to go now is up.</p>
-		</div>
-		<div class="timeline col-lg-4 hidden-md hidden-sm hidden-xs">
-		  <ul class="timeline">
-				<li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1781" class="smoothScroll">
-			  <div class="label leftlabel">1781</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">El Pueblo Sobre el Rio de Nuestra Se&#241;ora la Reina de los Angeles del Río de Porciúncula is the first European settlement in the Los Angeles Basin.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1850" class="smoothScroll">
-			  <div class="label leftlabel">1850</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">California is incorporated as a state, and Los Angeles as a municipality.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1881_1" class="smoothScroll">
-			  <div class="label leftlabel">1881</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">The Southern Pacific Railroad provides Los Angeles' first direct link with the eastern U.S.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1881_2" class="smoothScroll">
-			  <div class="label leftlabel">1881</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">The Los Angeles Times debuts as the Los Angeles Daily Times.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1896" class="smoothScroll">
-			  <div class="label leftlabel">1896</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Colonel J. Griffith donates five sq. miles of land to become Griffith Park.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1910" class="smoothScroll">
-			  <div class="label leftlabel">1910</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Hollywood votes to join the City of Los Angeles.</div>
-			</a>
-		      </div>
-		    </li>
-		  <!--  <li class="timeline-inverted">
+			<div class="timeline col-lg-4 hidden-md hidden-sm hidden-xs">
+				<ul class="timeline">
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1781" class="smoothScroll">
+								<div class="label leftlabel">1781</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">El Pueblo Sobre el Rio de Nuestra Se&#241;ora la Reina de los Angeles del Río de Porciúncula is the first European
+									settlement in the Los Angeles Basin.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1850" class="smoothScroll">
+								<div class="label leftlabel">1850</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">California is incorporated as a state, and Los Angeles as a municipality.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1881_1" class="smoothScroll">
+								<div class="label leftlabel">1881</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">The Southern Pacific Railroad provides Los Angeles' first direct link with the eastern U.S.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1881_2" class="smoothScroll">
+								<div class="label leftlabel">1881</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">The Los Angeles Times debuts as the Los Angeles Daily Times.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1896" class="smoothScroll">
+								<div class="label leftlabel">1896</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Colonel J. Griffith donates five sq. miles of land to become Griffith Park.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1910" class="smoothScroll">
+								<div class="label leftlabel">1910</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Hollywood votes to join the City of Los Angeles.</div>
+							</a>
+						</div>
+					</li>
+					<!--  <li class="timeline-inverted">
 		      <div class="timeline-badge">
 			<a href="#1911" class="smoothScroll">
 			  <div class="label leftlabel">1911</div>
@@ -284,89 +396,89 @@
 			</a>
 		      </div>
 		    </li>-->
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1915" class="smoothScroll">
-			  <div class="label leftlabel">1915</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Los Angeles annexes a large portion of the San Fernando Valley.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1919" class="smoothScroll">
-			  <div class="label leftlabel">1919</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Founding of the Southern Branch of the University of California (later UCLA).</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1924" class="smoothScroll">
-			  <div class="label leftlabel">1924</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Los Angeles has one million residents.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1928" class="smoothScroll">
-			  <div class="label leftlabel">1928</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Los Angeles City Hall opens.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1929" class="smoothScroll">
-			  <div class="label leftlabel">1929</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">UCLA moves to its current Westwood location.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1932" class="smoothScroll">
-			  <div class="label leftlabel">1932</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Los Angeles hosts the Olympic Games for the first time.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1940" class="smoothScroll">
-			  <div class="label leftlabel">1940</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">The Arroyo Seco Parkway Downtown and Pasadena becomes the nation's first freeway.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1944" class="smoothScroll">
-			  <div class="label leftlabel">1944</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Peak ridership of the Pacific Electric Railway (red car) streetcars.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1946" class="smoothScroll">
-			  <div class="label leftlabel">1946</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">The Cleveland Rams football team moves to Los Angeles.
-</div>
-			</a>
-		      </div>
-		    </li>
-<!--		    <li class="timeline-inverted">
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1915" class="smoothScroll">
+								<div class="label leftlabel">1915</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Los Angeles annexes a large portion of the San Fernando Valley.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1919" class="smoothScroll">
+								<div class="label leftlabel">1919</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Founding of the Southern Branch of the University of California (later UCLA).</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1924" class="smoothScroll">
+								<div class="label leftlabel">1924</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Los Angeles has one million residents.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1928" class="smoothScroll">
+								<div class="label leftlabel">1928</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Los Angeles City Hall opens.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1929" class="smoothScroll">
+								<div class="label leftlabel">1929</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">UCLA moves to its current Westwood location.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1932" class="smoothScroll">
+								<div class="label leftlabel">1932</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Los Angeles hosts the Olympic Games for the first time.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1940" class="smoothScroll">
+								<div class="label leftlabel">1940</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">The Arroyo Seco Parkway Downtown and Pasadena becomes the nation's first freeway.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1944" class="smoothScroll">
+								<div class="label leftlabel">1944</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Peak ridership of the Pacific Electric Railway (red car) streetcars.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1946" class="smoothScroll">
+								<div class="label leftlabel">1946</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">The Cleveland Rams football team moves to Los Angeles.
+								</div>
+							</a>
+						</div>
+					</li>
+					<!--		    <li class="timeline-inverted">
 		      <div class="timeline-badge">
 			<a href="#1955" class="smoothScroll">
 			  <div class="label leftlabel">1955</div>
@@ -376,17 +488,17 @@
 			</a>
 		      </div>
 		    </li>-->
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1957" class="smoothScroll">
-			  <div class="label leftlabel">1957</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Building height restrictions lifted by voter referendum.
-</div>
-			</a>
-		      </div>
-		    </li>
-		  <!--  <li class="timeline-inverted">
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1957" class="smoothScroll">
+								<div class="label leftlabel">1957</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Building height restrictions lifted by voter referendum.
+								</div>
+							</a>
+						</div>
+					</li>
+					<!--  <li class="timeline-inverted">
 		      <div class="timeline-badge">
 			<a href="#1958" class="smoothScroll">
 			  <div class="label leftlabel">1958</div>
@@ -413,16 +525,16 @@
 			</a>
 		      </div>
 		    </li>-->
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1965_1" class="smoothScroll">
-			  <div class="label leftlabel">1965</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Restrictions are lifted on immigration from East Asia, leading to the establishment of Koreatown.</div>
-			</a>
-		      </div>
-		    </li>
-		 <!--   <li class="timeline-inverted">
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1965_1" class="smoothScroll">
+								<div class="label leftlabel">1965</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Restrictions are lifted on immigration from East Asia, leading to the establishment of Koreatown.</div>
+							</a>
+						</div>
+					</li>
+					<!--   <li class="timeline-inverted">
 		      <div class="timeline-badge">
 			<a href="#1965_2" class="smoothScroll">
 			  <div class="label leftlabel">1965</div>
@@ -431,16 +543,16 @@
 			</a>
 		      </div>
 		    </li>-->
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1973" class="smoothScroll">
-			  <div class="label leftlabel">1973</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Tom Bradley becomes mayor of Los Angeles and the second black mayor of a major United States city.</div>
-			</a>
-		      </div>
-		    </li>
-		<!--    <li class="timeline-inverted">
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1973" class="smoothScroll">
+								<div class="label leftlabel">1973</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Tom Bradley becomes mayor of Los Angeles and the second black mayor of a major United States city.</div>
+							</a>
+						</div>
+					</li>
+					<!--    <li class="timeline-inverted">
 		      <div class="timeline-badge">
 			<a href="#1975" class="smoothScroll">
 			  <div class="label leftlabel">1975</div>
@@ -449,70 +561,70 @@
 			</a>
 		      </div>
 		    </li>-->
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1984_1" class="smoothScroll">
-			  <div class="label leftlabel">1984</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Los Angeles' population surpasses 3 million, overtakes Chicago as the nation's second largest city.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1984_2" class="smoothScroll">
-			  <div class="label leftlabel">1984</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Los Angeles becomes the only American city to host the summer Olympic games twice.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1990_1" class="smoothScroll">
-			  <div class="label leftlabel">1990</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">US Bank Tower opens.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1990_2" class="smoothScroll">
-			  <div class="label leftlabel">1990</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Metro Blue Line opens as the city's first modern rapid transit line.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1992" class="smoothScroll">
-			  <div class="label leftlabel">1992</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Rodney King riots take place.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#1994" class="smoothScroll">
-			  <div class="label leftlabel">1994</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">O.J. Simpson trial takes place.</div>
-			</a>
-		      </div>
-		    </li>
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#2005" class="smoothScroll">
-			  <div class="label leftlabel">2005</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Antonino Villaraigosa becomes the city's first Hispanic mayor since 1872.</div>
-			</a>
-		      </div>
-		    </li>
-		  	<!--  <li class="timeline-inverted">
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1984_1" class="smoothScroll">
+								<div class="label leftlabel">1984</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Los Angeles' population surpasses 3 million, overtakes Chicago as the nation's second largest city.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1984_2" class="smoothScroll">
+								<div class="label leftlabel">1984</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Los Angeles becomes the only American city to host the summer Olympic games twice.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1990_1" class="smoothScroll">
+								<div class="label leftlabel">1990</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">US Bank Tower opens.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1990_2" class="smoothScroll">
+								<div class="label leftlabel">1990</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Metro Blue Line opens as the city's first modern rapid transit line.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1992" class="smoothScroll">
+								<div class="label leftlabel">1992</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Rodney King riots take place.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#1994" class="smoothScroll">
+								<div class="label leftlabel">1994</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">O.J. Simpson trial takes place.</div>
+							</a>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#2005" class="smoothScroll">
+								<div class="label leftlabel">2005</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Antonino Villaraigosa becomes the city's first Hispanic mayor since 1872.</div>
+							</a>
+						</div>
+					</li>
+					<!--  <li class="timeline-inverted">
 		      <div class="timeline-badge">
 		<a href="#2006" class="smoothScroll">
 			  <div class="label leftlabel">2006</div>
@@ -521,16 +633,16 @@
 			</a>
 		      </div>
 		    </li>-->
-		    <li class="timeline-inverted">
-		      <div class="timeline-badge">
-			<a href="#2013" class="smoothScroll">
-			  <div class="label leftlabel">2013</div>
-			  <hr class="endpoint">
-			  <div class="label rightlabel">Eric Garcetti becomes the city's first Jewish mayor.</div>
-			</a>
-		      </div>
-		    </li>
-		  <!--  <li class="timeline-inverted">
+					<li class="timeline-inverted">
+						<div class="timeline-badge">
+							<a href="#2013" class="smoothScroll">
+								<div class="label leftlabel">2013</div>
+								<hr class="endpoint">
+								<div class="label rightlabel">Eric Garcetti becomes the city's first Jewish mayor.</div>
+							</a>
+						</div>
+					</li>
+					<!--  <li class="timeline-inverted">
 		      <div class="timeline-badge">
 			<a href="#2017" class="smoothScroll">
 			  <div class="label leftlabel">2017</div>
@@ -541,22 +653,35 @@
 		      </div>
 		    </li>-->
 
-		  </ul>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="row">
+			<footer>
+      	Page developed by <a href="https://github.com/theAnthonyLai" target="_blank">Anthony Lai</a>, <a href="https://github.com/allan-chen" target="_blank">Allan Chen</a>, and <a href="https://github.com/niniko1997" target="_blank">Nino Migineishvili </a>. &copy; 2017 <a href="http://dailybruin.com/" target="_blank">Daily Bruin</a>.
+			</footer>
 		</div>
 
-	    </div>
+		<script src="javascripts/TileLayer.Grayscale.js"></script>
+		<script src="javascripts/interactivemap.js"></script>
+		<script type="text/javascript" src="javascripts/timeline.js"></script>
+		<script>
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-      <script src="javascripts/TileLayer.Grayscale.js"></script>
-	    <script src="javascripts/interactivemap.js"></script>
-	    <script type="text/javascript" src="javascripts/timeline.js"></script>
-			<script>
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-60000629-5', 'auto');
+			ga('send', 'pageview');
+		</script>
+</body>
 
-				ga('create', 'UA-60000629-5', 'auto');
-				ga('send', 'pageview');
-			</script>
-	</body>
 </html>
