@@ -197,8 +197,11 @@ img.intext-photo {
 }
 
 .author {
-    color: #808080;
     text-align: right;
     margin-top: -20px;
     font-style: italic;
+}
+
+.author a {
+    color: #808080;
 }
