@@ -1,8 +1,8 @@
-var map = L.map('mapid', { fadeAnimation: false}).setView([34.120, -118.343], 10);
+var map = L.map('mapid', { fadeAnimation: false}).setView([34.120, -118.376], 11);
 
  L.tileLayer.grayscale('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: 'Map data &copy; <a href="http://openstreetmap.org/">OpenStreetMap</a> contributors',
-            maxZoom: 10, minZoom: 10
+            maxZoom: 13, minZoom: 10
         }).addTo(map);
 
 /* L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
