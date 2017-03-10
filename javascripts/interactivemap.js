@@ -57,7 +57,7 @@ window.open('http://dailybruin.com/2017/03/09/jacqueline-alvarez-gentrification-
 );
 
 lapd.on('click', function click(e){
-window.open('http://www.google.com')}
+window.open('hhttp://dailybruin.com/2017/03/09/william-zou-the-solution-to-crime-lies-in-communication-not-incarceration/')}
 );
 
 dtla.on('click', function click(e){
@@ -69,7 +69,7 @@ window.open('http://dailybruin.com/2017/03/09/aaron-julian-paul-koretzs-leadersh
 );
 
 southCentral.on('click', function click(e){
-window.open('http://www.google.com')}
+window.open('http://dailybruin.com/2017/03/09/pravin-visakan-city-mayors-push-for-after-school-programs-could-revitalize-lausd/')}
 );
 
 santaMonica.on('click', function click(e){
@@ -77,7 +77,7 @@ window.open('http://dailybruin.com/2017/03/09/keshav-tadimeti-las-silicon-beach-
 );
 
 sanFernando.on('click', function click(e){
-window.open('http://www.google.com')}
+window.open('http://dailybruin.com/2017/03/09/jasmine-aquino-city-leaders-must-pursue-sexual-education-reform/')}
 );
 
 
