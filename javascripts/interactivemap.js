@@ -11,19 +11,19 @@ var map = L.map('mapid', { fadeAnimation: false}).setView([34.120, -118.343], 10
 
 
 var koreatown = L.marker([34.061, -118.302]).addTo(map)
-    .bindPopup('Jacqueline Alvarez: Gentrification of LA detrimental to lower-income population');
+    .bindPopup('<div class="pin"><div class="pin-img"><img src="images/koreatown.png"/></div><div class="pin-text">Jacqueline Alvarez: Gentrification of LA detrimental to lower-income population</div></div>');
 
 var hollywood = L.marker([34.134, -118.321]).addTo(map)
-    .bindPopup('Guillaume Kosmala: Students must stand against proposals like Measure S');
+    .bindPopup('<div class="pin"><div class="pin-img"><img src="images/hollywood.png"/></div><div class="pin-text">Guillaume Kosmala: Students must stand against proposals like Measure S</div></div>');
 
 var lapd = L.marker([34.052, -118.244]).addTo(map)
-    .bindPopup('William Zou: The solution to crime lies in communication, not incarceration');
+    .bindPopup('<div class="pin"><div class="pin-img"><img src="images/lapd.png"/></div><div class="pin-text">William Zou: The solution to crime lies in communication, not incarceration</div></div>');
 
 var dtla = L.marker([34.040, -118.246]).addTo(map)
-    .bindPopup('Chris Busco: City infrastructure could turn Los Angeles into a pedestrian paradise');
+    .bindPopup('<div class="pin"><div class="pin-img"><img src="images/dtla.png"/></div><div class="pin-text">Chris Busco: City infrastructure could turn Los Angeles into a pedestrian paradise</div></div>');
 
 var westwood = L.marker([34.063, -118.445]).addTo(map)
-    .bindPopup('Aaron Julian: Paul Koretz\'s leadership needs to be more dynamic in final term');
+    .bindPopup('<div class="pin"><div class="pin-img"><img src="images/westwood.png"/></div><div class="pin-text">Aaron Julian: Paul Koretz\'s leadership needs to be more dynamic in final term</div></div>');
 
 var southCentral = L.marker([34.010, -118.251]).addTo(map)
     .bindPopup('Pravin Visakan: City mayor\'s push for after-school programs could vitalize LAUSD');

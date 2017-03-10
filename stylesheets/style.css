@@ -223,3 +223,27 @@ img.intext-photo {
 .author a {
     color: #808080;
 }
+
+.pin {
+    /*border: 1px solid green;*/
+}
+
+/*.pin > * {
+    display: inline-block;
+}*/
+
+.pin-img {
+    display: inline-block;
+    height: 100%;
+    width: 40px;
+    /*border: 1px solid red;*/
+}
+
+.pin-text {
+    display: inline-block;
+    height: 100%;
+    width: calc(100% - 45px);
+    margin-left: 5px;
+    vertical-align: middle;
+    /*border: 1px solid blue;*/
+}
