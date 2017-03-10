@@ -12,7 +12,8 @@
     position:absolute;
     top:50%;
     z-index:1;
-    background-color:#fcfcfc;
+    /*background-color:#fcfcfc;*/
+    background-color: #66c2ff;
     width:100%;
 }
 .title{
