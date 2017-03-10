@@ -57,7 +57,7 @@ window.open('http://dailybruin.com/2017/03/09/jacqueline-alvarez-gentrification-
 );
 
 lapd.on('click', function click(e){
-window.open('hhttp://dailybruin.com/2017/03/09/william-zou-the-solution-to-crime-lies-in-communication-not-incarceration/')}
+window.open('http://dailybruin.com/2017/03/09/william-zou-the-solution-to-crime-lies-in-communication-not-incarceration/')}
 );
 
 dtla.on('click', function click(e){
