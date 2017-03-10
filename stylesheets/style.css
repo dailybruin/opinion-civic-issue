@@ -170,6 +170,7 @@ img.intext-photo {
 }
 
 .related {
+    margin-top: 15px;
     padding-left: 0px;
     /*padding-right: 30px;*/
     font-family: 'Roboto Slab', serif;
