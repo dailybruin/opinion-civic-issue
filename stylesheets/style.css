@@ -168,3 +168,23 @@ hr.endpoint{
 img.intext-photo {
     max-width: 100%;
 }
+
+.related {
+    padding-left: 0px;
+    /*padding-right: 30px;*/
+    font-family: 'Roboto Slab', serif;
+}
+
+.related div {
+    border-top: 0.5px solid #D0D0D0 ;
+    padding-top: 10px;
+}
+
+.related h4 {
+    margin-bottom: 20px;
+}
+
+.related h4 a {
+    color: black;
+    font-weight: bold;
+}
