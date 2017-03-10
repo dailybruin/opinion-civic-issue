@@ -1,4 +1,8 @@
-var years = ['1850','1881_1','1881_2','1896','1910','1911'];
+var years = ['1781','1850','1881_1','1881_2','1896','1910',/*'1911',
+             '1913',*/'1915','1919','1924','1928','1929','1932','1940',
+            '1944','1946'/*,'1955'*/,'1957'/*,'1958','1960','1962'*/,'1965','1973',
+            /*'1975',*/'1984_1','1984_2','1990_1','1990_2','1992','1994',
+            '2005'/*,'2006'*/,'2013'/*,'2017'*/];
 (function() {
     var element = $('div.timeline');
     var originalY = element.offset().top;
@@ -13,17 +17,17 @@ var years = ['1850','1881_1','1881_2','1896','1910','1911'];
 	}
 	else{
 	    $('#mapid').css('visibility','visible');
-	}  
-	for(var i=1;i<=6;i++){
+	}
+	for(var i=1;i<years.length;i++){
 	    $('ul.timeline li:nth-child('+i+') .leftlabel').css('background-color','#FFFFFF');
 	}
 	var eventOffset = 0;
-	for(var i=1;i<6;i++){
-	    if(i == 6 || $('#'+years[i]).offset()['top']-1 >= $(window).scrollTop()){
-		$('ul.timeline li:nth-child('+i+') .leftlabel').css('background-color','#ffe301');
-		if(i > 3)
-		    eventOffset = $('ul.timeline li:nth-child('+i+')').position()['top']/2;
-		break;
+	for(var i=1;i<years.length;i++){
+	    if(i == years.length-1 || $('#'+years[i]).offset()['top']-3 >= $(window).scrollTop()){
+		      $('ul.timeline li:nth-child('+i+') .leftlabel').css('background-color','#ffe301');
+		        if(i > 3)
+		          eventOffset = $('ul.timeline li:nth-child('+i+')').position()['top']-$(window).height()/2;
+		      break;
 	    }
 	}
 
