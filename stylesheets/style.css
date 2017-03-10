@@ -180,6 +180,12 @@ img.intext-photo {
     padding-top: 10px;
 }
 
+.related img {
+    display: block;
+    width: 100%;
+    padding-right: 20px;
+}
+
 .related h4 {
     margin-bottom: 20px;
 }
